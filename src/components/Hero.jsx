@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <>
     <HeaderHero/>
-    <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-950 to-gray-950 text-white overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-br from-black via-black to-black text-white overflow-hidden relative">
       {/* Decorative blob - adjusted positioning and visibility */}
       <div className="absolute -top-50 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-gradient-to-br from-[#395F71] to-[#395F71] opacity-30 blur-3xl pointer-events-none z-[1]" />
 
@@ -70,7 +70,7 @@ export default function Hero() {
             />
           </motion.div>
                 {/* Bottom gradient overlay */}
-      <div className="absolute bottom-0 left-0 right-0 w-full h-5/6 bg-gradient-to-t from-gray-950 to-transparent pointer-events-none z-1" />
+      <div className="absolute bottom-0 left-0 right-0 w-full h-5/6 bg-gradient-to-t from-black to-transparent pointer-events-none z-1" />
         </div>
 
 

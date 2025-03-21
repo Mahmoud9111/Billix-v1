@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from "react"
-import { Building2, Package, Target, ArrowRight } from "lucide-react"
+import { Building2, Package, Target, ArrowRight, Zap } from "lucide-react"
 
 
 export default function Plans2() {
@@ -71,16 +71,30 @@ export default function Plans2() {
   }
 
   return (
-    <section className="py-20 px-4 bg-black">
+    <section className="py-20 px-4 bg-black mt-40">
       <div className="max-w-6xl mx-auto">
-
-
-        <div className="flex justify-between items-end mb-12">
-          <h2 className="text-4xl font-bold text-white">Our Pricing Plans</h2>
-          <p className="text-base text-gray-400 max-w-md">
-            Here are three different plans tailored to Beginner, Professional, and Enterprise levels for your AI
-            solution:
+        <div className="relative mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-900 border border-neutral-700 mb-4">
+            <Zap className="w-4 h-4 text-white" />
+            <span className="text-white font-medium">Top Features</span>
+          </div>
+          <h2 className="text-5xl font-bold text-white mb-2">More Than AI</h2>
+          <p className="text-gray-400 max-w-lg">
+            Step into the future with AI, engineered to tackle the most complex challenges.
           </p>
+
+          <div
+            className="absolute top-5 right-30 text-[180px] font-bold select-none hidden lg:block z-0"
+            style={{
+              background: "linear-gradient(to bottom, rgba(255,255,255,0.2), transparent)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              color: "transparent",
+            }}
+          >
+            FEATURES
+          </div>
         </div>
 
         <div className="flex justify-center gap-4 mb-12">

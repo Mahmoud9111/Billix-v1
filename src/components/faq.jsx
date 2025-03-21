@@ -11,25 +11,25 @@ const FaqSection = React.forwardRef(({ className, title, description, items, ...
   return (
     <section
       ref={ref}
-      className={cn("py-24 w-full bg-black text-white", className)}
+      className={cn("py-12 md:py-16 w-full bg-black text-white", className)}
       {...props}
     >
-      <div className="container max-w-6xl mx-auto">
+      <div className="container max-w-5xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto text-center mb-16"
+          className="mb-16" // Removed max-w-3xl mx-auto text-center
         >
           <h2 className="text-4xl lg:text-5xl font-semibold mb-4 text-white">
             {title}
           </h2>
-          {description && <p className="text-base text-gray-300">{description}</p>}
+          {description && <p className="text-base text-gray-300 max-w-2xl">{description}</p>}
         </motion.div>
 
         {/* FAQ Items */}
-        <div className="max-w-3xl mx-auto space-y-3">
+        <div className="max-w-5xl mx-auto space-y-3">
           {items.map((item, index) => (
             <FaqItem key={index} question={item.question} answer={item.answer} index={index} />
           ))}
@@ -69,7 +69,7 @@ const FaqItem = React.forwardRef((props, ref) => {
             "text-lg font-medium transition-colors duration-200 text-left",
             "text-gray-300",
             isOpen && "text-white",
-          )}
+          )} 
         >
           {question}
         </h3>

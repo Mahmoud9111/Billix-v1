@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const Reviews = ({ avatar, name, username, text }) => {
   return (
     <motion.div
-      className="bg-[#0a0a20]/80 rounded-xl p-4 sm:p-6 md:p-8 backdrop-blur-sm border border-[#1a1a3a]/30 h-full min-w-[280px] sm:min-w-[320px] md:min-w-[360px] lg:min-w-[400px] mx-2 sm:mx-3 md:mx-4"
+      className="bg-[#000000]/80  rounded-2xl p-4 sm:p-6 md:p-8 backdrop-blur-sm border border-zinc-700/30 h-full min-w-[280px] sm:min-w-[320px] md:min-w-[360px] lg:min-w-[400px] mx-2 sm:mx-3 md:mx-4 shadow-[0_0_0_0,inset_0_0_30px_rgba(57,95,113,0.5)]"
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.2 }}
     >
@@ -99,7 +99,7 @@ export default function TestimonialsSection() {
       mapBrightness: 6,
       baseColor: [0.1, 0.1, 0.1],
       markerColor: [0, 1, 1],  
-      glowColor: [1, 1, 1],
+      glowColor: [0.22, 0.37, 0.44],
       markers: [
         { location: [37.7749, -122.4194], size: 0.04 }, // San Francisco
       ],
@@ -149,18 +149,22 @@ export default function TestimonialsSection() {
   }, [])
 
   return (
-    <div className="bg-gray-950 text-white py-16 min-h-screen flex flex-col items-center overflow-hidden">
-      {/* Title first */}
-      <div className="w-full text-center  z-20 ">
-        <h1 className=" mt-40 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl mx-auto px-4 text-white drop-shadow-lg">
-          What Our Clients Say
-        </h1>
-      </div>
+    <div className="bg-black text-white py-16  flex flex-col items-center overflow-hidden mt-40 mb-40">
       
       {/* Globe placed directly under the title */}
       <div className="relative w-full max-w-7xl mx-auto ">
         <div className="relative w-full h-[400px] flex items-center justify-center z-10 ">
           {/* Globe canvas */}
+
+      {/* Title with gradient and background glow */}
+      <div className="w-full text-center z-20 relative">
+        <div className="absolute left-2/4 top-1/4 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[50px] rounded-full bg-[#395F71] opacity-99 blur-3xl pointer-events-none" />
+        <h1 className="ml-72 mb-60 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl mx-auto px-4 bg-gradient-to-b from-white via-zinc-100 to-zinc-800 text-transparent bg-clip-text drop-shadow-lg relative">
+          What Our Clients Say
+        </h1>
+      </div>
+
+
           <div className="absolute inset-0 flex justify-center items-center">
             <div className="w-[600px] h-[600px] relative mt-10">
               <canvas
@@ -174,7 +178,7 @@ export default function TestimonialsSection() {
                 }}
               />
               {/* Adjusted gradient overlay */}
-              <div className="absolute bottom-0 left-0 right-0 h-[110%] bg-gradient-to-t from-gray-950 via-gray-950 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-[110%] bg-gradient-to-t from-black via-black to-transparent"></div>
             </div>
           </div>
         </div>
@@ -184,8 +188,8 @@ export default function TestimonialsSection() {
       <div className="max-w-full w-full overflow-hidden -mt-60 z-40">
         <div className="relative">
           {/* Gradient masks */}
-          <div className="absolute left-0 top-0 w-[50%] h-full bg-gradient-to-r from-[#030318] to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 w-[50%] h-full bg-gradient-to-l from-[#030318] to-transparent z-10"></div>
+          <div className="absolute left-0 top-0 w-[50%] h-full bg-gradient-to-r from-[#000000] to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 w-[50%] h-full bg-gradient-to-l from-[#000000] to-transparent z-10"></div>
           
           {/* Top row - left to right */}
           <motion.div
