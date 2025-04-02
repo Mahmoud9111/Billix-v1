@@ -8,8 +8,6 @@ export default function StatsSection() {
         {/* Left to right gradient overlay */}
         <div className="absolute inset-0 bg-black opacity-75 z-10"></div>
 
-        {/* Blob */}
-
         {/* Square Grid - Bigger cells */}
         <div className="h-full w-full">
           <div
@@ -17,7 +15,6 @@ export default function StatsSection() {
             style={{
               gridTemplateColumns: "repeat(auto-fill, minmax(130px, 1fr))",
               gridTemplateRows: "repeat(auto-fill, minmax(130px, 1fr))",
-              
               gridAutoFlow: "row",
             }}
           >
@@ -30,8 +27,8 @@ export default function StatsSection() {
 
       {/* Content with gray-950 background */}
       <div className="relative z-20 max-w-6xl mx-auto">
-      <div className="p-8 md:p-12 rounded-t-2xl grid md:grid-cols-2 gap-12 items-center bg-black">
-      <div className="flex flex-col items-center md:items-start gap-8">
+        <div className="p-8 md:p-12 rounded-t-2xl grid md:grid-cols-2 gap-12 items-center bg-black">
+          <div className="flex flex-col items-center md:items-start gap-8">
             <div className="flex items-center gap-2 text-[#ffffff] text-sm">
               <div className="h-px w-6 bg-[#395F71]"></div>
               <span>indicator</span>
@@ -43,17 +40,24 @@ export default function StatsSection() {
               <br />A Great Indicator.
             </h2>
 
-            <div className="bg-[#00000]/60 backdrop-blur-xl rounded-xl p-4 flex items-center gap-3 shadow-[0_0_0_0,inset_0_0_30px_rgba(200,200,200,0.20)] border border-neutral-700">
-              <div className="flex flex-col">
-                <div className="flex items-center gap-2">
-                  <span className="text-white font-bold">4.9/5</span>
-                  <div className="flex">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                </div>
-                <span className="text-gray-400 text-xs">Based on 34 reviews on Clutch</span>
+            <div className="bg-black text-white p-4 rounded-md max-w-xs border border-neutral-700">
+              <div className="flex items-center gap-2 mb-2">
+                <img 
+                  src="/public/trustpilot-2.svg" 
+                  alt="Trustpilot star" 
+                  width="28" 
+                  height="28"
+                  className="text-[#00b67a]"
+                />
+                <span className="font-semibold text-xl">Trustpilot</span>
+              </div>
+              <img 
+                src="/public/stars-5-1.svg" 
+                alt="4.8 out of 5 stars rating" 
+                className="h-8 mb-1"
+              />
+              <div className="text-sm">
+                <span className="font-semibold">TrustScore 4.8</span> <span className="text-gray-300">2,336 reviews</span>
               </div>
             </div>
           </div>
@@ -95,7 +99,7 @@ export default function StatsSection() {
 
         {/* Trusted By Section */}
         <div className="text-center max-w-7xl mx-auto rounded-b-2xl bg-black py-16 px-8 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-transparent after:via-[#395F71] after:via-50% after:to-transparent -z-[10]">
-        <p className="text-gray-300 text-md mb-16">Trusted by 500+ Brands & Companies</p>
+          <p className="text-gray-300 text-md mb-16">Trusted by 500+ Brands & Companies</p>
           <div className="flex flex-wrap justify-center items-center gap-16 md:gap-14">
             {["Upglam", "Nutrilix", "Investify", "Knewish", "SIKKA", "SEKORO"].map((brand) => (
               <div key={brand} className="text-gray-300 opacity-70 font-semibold text-xl">

@@ -39,39 +39,34 @@ export default function TestimonialsSection() {
       avatar: "https://v0.dev/placeholder.svg?height=40&width=40",
       name: "CindyCandy",
       username: "CindyC688",
-      text: "This app is a testament to the potential of AI. The image generation is mind-blowing.",
+      text: "This AI tool has completely transformed the way I handle invoices! It extracts data instantly and lets me export it in any format I need. A must-have for businesses!",
     },
     {
       avatar: "https://v0.dev/placeholder.svg?height=40&width=40",
       name: "Leodo17",
       username: "leodo17",
-      text: "The integration capabilities of this AI app are unparalleled.",
-    },
-    {
-      avatar: "https://v0.dev/placeholder.svg?height=40&width=40",
-      name: "CindyCandy",
-      username: "CindyC688",
-      text: "I've never experienced such seamless text to image and text-to-video transformations.",
+      text: "The integration capabilities are top-notch! This tool seamlessly connects with my accounting software, saving me hours of manual work.",
     },
     {
       avatar: "https://v0.dev/placeholder.svg?height=40&width=40",
       name: "JohnD",
       username: "JohnD456",
-      text: "This AI app seamlessly blends innovation with user-friendly design. From image generation to data analysis.",
+      text: "Managing invoices has never been easier. The AI chatbot even helps me with complex calculations on the spot—absolute game-changer!",
     },
     {
       avatar: "https://v0.dev/placeholder.svg?height=40&width=40",
-      name: "CindyCandy",
-      username: "CindyC688",
-      text: "This app is a testament to the potential of AI. The image generation is mind-blowing.",
+      name: "SarahM",
+      username: "SarahM99",
+      text: "The ability to create custom forms and templates is fantastic. Now, I can automate my entire invoicing process with ease!",
     },
     {
       avatar: "https://v0.dev/placeholder.svg?height=40&width=40",
-      name: "Leodo17",
-      username: "leodo17",
-      text: "The integration capabilities of this AI app are unparalleled.",
+      name: "MarkT",
+      username: "MarkT987",
+      text: "This AI-powered tool makes invoice processing seamless. Upload, analyze, and export with just a few clicks—brilliant!",
     },
-  ]
+  ];
+  
 
   useEffect(() => {
     let phi = 0

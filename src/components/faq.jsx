@@ -103,12 +103,12 @@ const FaqItem = React.forwardRef((props, ref) => {
               transition: { duration: 0.2, ease: "easeIn" },
             }}
           >
-            <div className="px-6 pb-4 pt-2">
+            <div className="px-8 pb-6 pt-3">
               <motion.p
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -10, opacity: 0 }}
-                className="text-sm text-gray-400 leading-relaxed"
+                className="text-base text-gray-300 leading-relaxed"
               >
                 {answer}
               </motion.p>
@@ -126,34 +126,34 @@ function FAQ() {
   // Example FAQ items
   const faqItems = [
     {
-      question: "What is Next.js?",
+      question: "How does your AI invoice processing work?",
       answer:
-        "Next.js is a React framework that enables functionality such as server-side rendering, static site generation, and API routes. It provides a great developer experience with features like fast refresh and file-based routing.",
+        "Our AI-powered platform automatically reads, extracts, and organizes key data from invoices, eliminating the need for manual entry. Simply upload your invoice, and our AI processes it in real-time, providing you with structured data ready for analysis or export.",
     },
     {
-      question: "How do I get started with Next.js?",
+      question: "Can I export invoice data to multiple file formats?",
       answer:
-        "To get started with Next.js, you can use the create-next-app command: 'npx create-next-app@latest'. This will set up a new Next.js project with all the necessary configurations.",
+        "Yes! Our tool supports various export options, including Excel, PDF, and CSV formats, allowing you to seamlessly integrate the extracted data into your accounting systems or share it with your team.",
     },
     {
-      question: "What is the App Router?",
+      question: "What types of invoices can your AI handle?",
       answer:
-        "The App Router is Next.js's new routing system introduced in version 13. It uses a file-system based router built on React Server Components, supporting layouts, nested routing, loading states, error handling, and more.",
+        "Our AI is designed to handle a wide range of invoice types, whether structured or unstructured. Whether it’s a standard purchase invoice, utility bill, or custom format, our AI adapts to various invoice layouts and ensures accurate data extraction.",
     },
     {
-      question: "What are Server Components?",
+      question: "How does the AI chatbot help with financial calculations?",
       answer:
-        "Server Components are a new type of React component that render on the server. They can fetch data directly, access backend resources securely, and reduce the client-side JavaScript bundle size.",
+        "Our intelligent AI chatbot is built to assist with a variety of financial tasks. From performing complex calculations to generating custom financial reports, it helps you make data-driven decisions quickly. Simply ask the chatbot for specific calculations, and it delivers results instantly.",
     },
     {
-      question: "How do I deploy a Next.js application?",
+      question: "Is your platform easy to integrate with my existing systems?",
       answer:
-        "Next.js applications can be easily deployed on Vercel with zero configuration. You can also deploy to other platforms like Netlify, AWS, or any Node.js hosting service.",
+        "Absolutely! Our platform is designed for seamless integration with popular accounting software and ERP systems. With our flexible export options and API capabilities, you can quickly sync the extracted data with your current tools, ensuring a smooth workflow with minimal disruption.",
     },
   ]
 
   return (
-    <main className="min-h-screen py-12 bg-black">
+    <main className=" py-12 bg-black">
       <FaqSection
         title="Frequently Asked Questions"
         description="Find answers to commonly asked questions about our platform and services."

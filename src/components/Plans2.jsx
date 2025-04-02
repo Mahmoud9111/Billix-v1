@@ -84,7 +84,7 @@ export default function Plans2() {
           </p>
 
           <div
-            className="absolute top-5 right-30 text-[180px] font-bold select-none hidden lg:block z-0"
+            className="absolute top-20 right-35 text-[210px] font-bold select-none hidden lg:block z-0"
             style={{
               background: "linear-gradient(to bottom, rgba(255,255,255,0.2), transparent)",
               WebkitBackgroundClip: "text",
@@ -93,7 +93,7 @@ export default function Plans2() {
               color: "transparent",
             }}
           >
-            FEATURES
+            PRICING
           </div>
         </div>
 

@@ -3,28 +3,28 @@ import { Zap } from 'lucide-react';
 
 const cards = [
   {
-    title: "Deep Learning Models",
-    description: "Leverage the power of deep neural networks for complex data processing and decision-making.",
+    title: " Ultra-Fast AI Processing ",
+    description: " Instantly extract, categorize, and process invoice data with cutting-edge AI, saving you time.",
     image: "/public/imgs/board.png"
   },
   {
-    title: "Cognitive Automation",
-    description: "Transform your business processes with cognitive automation.",
+    title: " Seamless File Export",
+    description: "Effortlessly convert invoices into Excel, PDF, or text formats, ensuring smooth integration with your existing systems.",
     image: "/public/imgs/click.png"
   },
   {
-    title: "Advanced NLP",
-    description: "Go beyond basic NLP with our advanced NLP capabilities.",
+    title: "Supports All Invoice Types",
+    description: "Our AI adapts to any invoice format, allowing you to process multiple types without limitations.",
     image: "/public/imgs/cpuout.png"
   },
   {
-    title: "AI-Powered Predictive Maintenance",
-    description: "Prevent costly downtime with our AI-driven predictive maintenance feature. By analyzing equipment data in real-time.",
+    title: "Powerful Analysis & Custom Forms",
+    description: "Generate insightful reports, create custom forms, and unlock financial trends with AI-driven analytics.",
     image: "/public/imgs/chart4.png"
   },
   {
-    title: "Computer Vision & Image Recognition",
-    description: "Unlock new possibilities with our cutting-edge computer vision technology. Our AI can analyze and interpret visual data.",
+    title: "User-Friendly & AI-Driven",
+    description: "Enjoy an intuitive, easy-to-use platform with an integrated AI chatbot for instant calculations and smart assistance.",
     image: "/public/imgs/drag&drop.png"
   }
 ];
@@ -37,15 +37,15 @@ function Benefits() {
         <div className="relative mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-900 border border-neutral-700 mb-4">
             <Zap className="w-4 h-4 text-white" />
-            <span className="text-white font-medium">Top Features</span>
+            <span className="text-white font-medium">Our Benefits</span>
           </div>
-          <h2 className="text-5xl font-bold text-white mb-2">More Than AI</h2>
+          <h2 className="text-5xl font-bold text-white mb-2">Why Us ?</h2>
           <p className="text-gray-400 max-w-lg">
-            Step into the future with AI, engineered to tackle the most complex challenges.
+          Smarter Invoicing, Faster Decisions, Seamless Automation.
           </p>
 
           <div
-            className="absolute top-5 right-30 text-[180px] font-bold select-none hidden lg:block z-0"
+            className="absolute top-2 right-40 text-[180px] font-bold select-none hidden lg:block z-0"
             style={{
               background: "linear-gradient(to bottom, rgba(255,255,255,0.2), transparent)",
               WebkitBackgroundClip: "text",
@@ -54,7 +54,7 @@ function Benefits() {
               color: "transparent",
             }}
           >
-            FEATURES
+            BENEFITS
           </div>
         </div>
 

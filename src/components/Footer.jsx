@@ -25,14 +25,7 @@ const links = [
                 title: 'Pricing',
                 href: '#',
             },
-            {
-                title: 'Help',
-                href: '#',
-            },
-            {
-                title: 'About',
-                href: '#',
-            },
+
         ],
     },
     {
@@ -58,71 +51,16 @@ const links = [
                 title: 'Collaboration',
                 href: '#',
             },
-            {
-                title: 'Design',
-                href: '#',
-            },
-            {
-                title: 'Management',
-                href: '#',
-            },
+
         ],
     },
-    {
-        group: 'Company',
-        items: [
-            {
-                title: 'About',
-                href: '#',
-            },
-            {
-                title: 'Careers',
-                href: '#',
-            },
-            {
-                title: 'Blog',
-                href: '#',
-            },
-            {
-                title: 'Press',
-                href: '#',
-            },
-            {
-                title: 'Contact',
-                href: '#',
-            },
-            {
-                title: 'Help',
-                href: '#',
-            },
-        ],
-    },
-    {
-        group: 'Legal',
-        items: [
-            {
-                title: 'Licence',
-                href: '#',
-            },
-            {
-                title: 'Privacy',
-                href: '#',
-            },
-            {
-                title: 'Cookies',
-                href: '#',
-            },
-            {
-                title: 'Security',
-                href: '#',
-            },
-        ],
-    },
+
+
 ]
 
 export default function FooterSection() {
     return (
-        <footer className="border-neutral-600 bg-black text-white pt-20">
+        <footer className="border-neutral-600 bg-black text-white pt-10">
             <div className="mb-8 border-neutral-600 border-b md:mb-12">
                 <div className="mx-auto flex max-w-5xl flex-wrap items-end justify-between gap-6 px-6 pb-6">
                     <a href="/" aria-label="go home" className="block size-fit">
@@ -178,39 +116,14 @@ export default function FooterSection() {
                             </div>
                         ))}
                     </div>
-                    <form className="row-start-1 border-b border-neutral-600 pb-8 text-sm md:col-span-2 md:border-none lg:col-span-1">
-                        <div className="space-y-4">
-                            <Label htmlFor="mail" className="block font-medium text-white">
-                                Newsletter
-                            </Label>
-                            <div className="flex gap-2">
-                                <Input type="email" id="mail" name="mail" placeholder="Your email" className="h-8 text-sm bg-transparent border-neutral-600 text-white" />
-                                <Button size="sm" className="bg-white text-black hover:bg-gray-200">Submit</Button>
-                            </div>
-                            <span className="text-gray-400 block text-sm">Don't miss any update!</span>
-                        </div>
-                    </form>
+                    <div className="row-start-1 pb-8 text-sm md:col-span-2 md:border-none lg:col-span-1">
+                        <Button className="bg-white text-black hover:bg-gray-200 w-full">
+                            Contact Us
+                        </Button>
+                    </div>
                 </div>
                 <div className="mt-12 flex flex-wrap items-end justify-between gap-6 border-t border-neutral-600 py-6">
-                    <small className="text-gray-400 order-last block text-center text-sm md:order-first">© {new Date().getFullYear()} Tailus UI, All rights reserved</small>
-                    <form action="">
-                        <div className="relative">
-                            <ChevronsUpDown className="pointer-events-none absolute inset-y-0 right-2 my-auto opacity-75" size="0.75rem" />
-                            <select
-                                className={cn(
-                                    'border-neutral-600 file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground shadow-xs flex h-9 w-full min-w-32 appearance-none rounded-md border bg-transparent px-3 py-1 text-base outline-none transition-[color,box-shadow] file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm',
-                                    'focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]',
-                                    'aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive'
-                                )}
-                                name="language">
-                                <option value="1">English</option>
-                                <option value="2">Espanol</option>
-                                <option value="3">Français</option>
-                                <option value="4">Swahili</option>
-                                <option value="5">Lingala</option>
-                            </select>
-                        </div>
-                    </form>
+                    <small className="text-gray-400 block text-center text-sm w-full">© {new Date().getFullYear()} Tailus UI, All rights reserved</small>
                 </div>
             </div>
         </footer>

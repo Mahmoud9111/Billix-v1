@@ -8,6 +8,8 @@ import Benefits from './components/Benefits'
 import Plans2 from './components/Plans2'
 import FooterSection from './components/Footer'
 import FaqSection from './components/faq'
+import ASK from './components/ASK'
+import ContactPage from './components/ContactPage'
 function App() {
 
   return (
@@ -20,8 +22,10 @@ function App() {
       <Plans2/>
       <Reviews/>
       <FaqSection/>
-      <FooterSection/>
+      <ContactPage/>
+      <ASK/>
 
+      <FooterSection/>
 
     </>
   )

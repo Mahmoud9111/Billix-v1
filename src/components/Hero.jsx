@@ -2,15 +2,18 @@
 
 import { Button } from "../components/ui/Button"
 import { motion } from "framer-motion"
+import { ArrowRight } from "lucide-react"
 import HeaderHero from "../components/HeaderHero"
+import { CircularLines } from "./CircularLines"
 
 export default function Hero() {
   return (
     <>
     <HeaderHero/>
-    <div className="min-h-screen bg-gradient-to-br from-black via-black to-black text-white overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-br from- via-black to-black text-white overflow-hidden relative">
+      <CircularLines />
       {/* Decorative blob - adjusted positioning and visibility */}
-      <div className="absolute -top-50 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-gradient-to-br from-[#395F71] to-[#395F71] opacity-30 blur-3xl pointer-events-none z-[1]" />
+      <div className="absolute -top-50 left-1/2 -translate-x-1/2 w-[900px] h-[350px] rounded-full bg-gradient-to-br from-[#395F71] to-[#395F71] opacity-30 blur-3xl pointer-events-none z-[1]" />
 
       <div className="container mx-auto px-4 py-20">
 
@@ -28,23 +31,26 @@ export default function Hero() {
 
         {/* Hero content */}
         <div className="max-w-5xl mx-auto text-center mb-16 relative z-10"> 
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium mb-6 tracking-tight bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] bg-clip-text text-transparent">
-            Modern analytics
-            <br />
-            <span className="bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] bg-clip-text text-transparent">for the modern world</span>
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium mb-6 tracking-tight bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] bg-clip-text text-transparent [text-shadow:_0_0_90px_rgb(255_255_255_/_50%)]">
+          Invoice Intelligence for the Future of Business
+
+<br />
+            <span className="bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] bg-clip-text text-transparent"></span>
           </h1>
           <p className="text-lg md:text-xl text-[#ffffff] mb-10 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-            tristique.
+          Automate invoice processing, extract data instantly, analyze financial trends, and export to any format—all with the power of AI.
+
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-black hover:bg-cyan-50 px-6 py-6 text-base">Download the app</Button>
-            <Button variant="outline" className="border-white/30 hover:bg-white/10 px-6 py-6 text-base">
-              Talk to an expert
-            </Button>      
+            <button className="bg-white text-black hover:bg-gray-100 hover:shadow-[0_0_20px_rgba(255,255,255,0.45)] group py-3 px-9 rounded-xl transition-all flex items-center justify-center gap-2">
+              Get Started <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </button>
+            <button className="bg-black text-white border border-white/30 hover:bg-neutral-800 duration-300 group py-3 px-6 rounded-xl transition-all flex items-center justify-center gap-2">
+              Talk to an expert 
+            </button>      
 
     {/* Decorative blob - adjusted positioning and visibility */}
-    <div className="absolute top-60 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] rounded-full bg-gradient-to-br from-[#395F71] to-[#395F71] opacity-30 blur-3xl pointer-events-none z-[1]" />
+    <div className="absolute top-90 left-1/2 -translate-x-1/2 w-[1150px] h-[400px] rounded-full bg-gradient-to-br from-[#395F71] to-[#395F71] opacity-30 blur-3xl pointer-events-none z-[1]" />
 
 
           </div>

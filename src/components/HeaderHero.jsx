@@ -17,10 +17,10 @@ const Logo = () => {
 }
 
 const menuItems = [
-  { name: "Features", href: "#link" },
-  { name: "Solution", href: "#link" },
-  { name: "Pricing", href: "#link" },
-  { name: "About", href: "#link" },
+  { name: "Home", href: "#link" },
+  { name: "Services", href: "#link" },
+  { name: "Contact Us", href: "#link" },
+  { name: "QA", href: "#link" },
 ]
 
 const HeaderHero = () => {
@@ -35,7 +35,7 @@ const HeaderHero = () => {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
   return (
-    <header className="relative text-white">
+    <header className="relative text-white z-10000">
         
       <nav data-state={menuState ? "active" : "inactive"} className="fixed z-20 w-full px-2">
         <div
